@@ -89,8 +89,31 @@ var obj = {
     // Remember that we use && for and statements. 
   // Inside another for loop for arr, only console.log the values that are either above 400, or less than 200. 
     // Remember that we use || for or statements. 
-
-
+// 9. Now let's combine an if statement with our array for loop. 
+  // Let's put 
+  if(arr[i]) {
+    console.log(arr[i]);
+  }
+  // inside of our for loop. What do you expect this to log? 
+  // Remember that JavaScript does type coercion, forcing whatever is in the conditional part of our if(conditional) statement to be a boolean value
+  // Let's try this again:
+  if(0) {
+    console.log(arr[i]);
+  }
+  // Keep trying different combinations inside the conditional part of the if loop. Particularly, try:
+  /*
+  ''
+  0
+  1
+  NaN
+  'hi there'
+  true
+  undefined
+  -1
+  null
+  {}
+  []
+  */
 
 // Arrays extra credit: 
 // Let's revisit this concept that i is just a number. What if we wanted to iterate through an array backwards? 
