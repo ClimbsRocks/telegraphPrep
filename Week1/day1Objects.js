@@ -13,14 +13,49 @@
 // 5. Add a property called bestFriend, and set it equal to your name. 
 // 6. Add in a superPower property. Set it equal to 'gives amazing hugs'.
 
+// Access using dot notation
+// 7. Now try to access all the values you've stored in mysticalAnimal. One at a time (not all at once!), what do you need to do to access the values:
+  // 'dragon'
+  // 'Larry'
+  // []
+  // your own name
+  // 'gives amazing hugs'
+// Hopefully this starts to feel somewhat repetitive- that's awesome! That means that you're learing this super well so far. If it doesn't, try going back and doing it again on your own time. 
+// 
+
 // Bracket notation:
 // Recall that we can do two different things with bracket notation:
   // A. Evaluate a variable or expression, and look up what that variable evalutates to as a property name in the object.
   // B. Pass in a string (as noted by the quotes surrounding it) and look up that string as a property name in the object. 
 // Remember that bracket notation is the ONLY way to look up variables or expressions when using them with objects. 
 
+// 8. Create a variable called newPropertyToAdd, and set it equal to 'food'. 
+// 9. Now, using bracket notation and newPropertyToAdd, create a food property on our mysticalAnimal object, and set it equal to 'BBQ'. NOTE: you should not be typing the word food to accomplish this task!
+// 10. Now set newPropertyToAdd equal to 'canFly'.
+// 11. What do you expect to happen when we type in the following line?
+  // mysticalAnimal[newPropertyToAdd] = true; 
+  // Think through this with your pair. Then uncomment that line and console.log mysticalAnimal afterwards!
+  // Now let's talk through what just happened:
+    // The JS interpreter reads the line of code from left to right, just as we do. 
+    // The first thing it does is encounter the variable mysticalAnimal. It looks up what this variable points to, and finds that it evaluates to an object. 
+    // That object is now what the computer holds, as a result of evaluating the variable mysticalAnimal. 
+    // Next, it recognizes the brackets. It knows to evaluate whatever comes inside the brackets, and then look up the results of that as a property name on the object. 
+    // Next, it encounters the thing inside the brackets. In this case, that thing is a variable. So, it goes off and looks up what that variable is. It finds that variable is equal to the string 'canFly'. 
+    // Now, it looks up the string 'canFly' as a property name on our mysticalAnimal object, and returns the value that is stored at that property name, which is the boolean value true in this case. 
+  // That's pretty cool that we can pretend to be the machine and explain exactly what it's doing with each character of code that we've written! See, no black magic here. It just follows a set of rules that we've agreed on beforehand. 
+// Now, onto point B above of using bracket notation- passing in a string. 
+// 12. Using bracket notation still, pass in the string 'collects' inside the brackets, and set it equal to the value 'diamonds and gold and fire extinguishers'. 
+// At first glance, this appears to be a different pattern than passing in a variable inside the brackets. But let's revisit the same steps we talked through above, and you'll notice that all we did was make one step simpler for the computer. 
+// Now let's talk through what just happened:
+  // The JS interpreter reads the line of code from left to right, just as we do. 
+  // The first thing it does is encounter the variable mysticalAnimal. It looks up what this variable points to, and finds that it evaluates to an object. 
+  // That object is now what the computer holds, as a result of evaluating the variable mysticalAnimal. 
+  // Next, it recognizes the brackets. It knows to evaluate whatever comes inside the brackets, and then look up the results of that as a property name on the object. 
+  // Next, it encounters the thing inside the brackets. In this case, that thing is already a string, 'collects'. THIS STEP IS THE ONLY ONE THAT CHANGES AT ALL. When the interpreter goes to evaluate the thing inside the brackets, it recognizes that thing is already a string and that it doesn't have to do any further work on this step. In the previous version, the only differences is that it had to turn the thing inside the brackets into a string by evaluating it as a variable first. 
+  // Now, it looks up the string 'colelcts' as a property name on our mysticalAnimal object, and returns the value that is stored at that property name, which is the string 'diamonds and gold and fire extinguishes' in this case. 
+
 // 7. Create a variable called thisIsAVariable. Set it equal to the string 'superPower'.
 // Now let's use this to play with bracket vs. dot notation. 
-// 8. 
+// 8. Try using dot notation to 
 
 // grandCouncil - a collection
