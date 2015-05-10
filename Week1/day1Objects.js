@@ -52,10 +52,36 @@
   // That object is now what the computer holds, as a result of evaluating the variable mysticalAnimal. 
   // Next, it recognizes the brackets. It knows to evaluate whatever comes inside the brackets, and then look up the results of that as a property name on the object. 
   // Next, it encounters the thing inside the brackets. In this case, that thing is already a string, 'collects'. THIS STEP IS THE ONLY ONE THAT CHANGES AT ALL. When the interpreter goes to evaluate the thing inside the brackets, it recognizes that thing is already a string and that it doesn't have to do any further work on this step. In the previous version, the only differences is that it had to turn the thing inside the brackets into a string by evaluating it as a variable first. 
-  // Now, it looks up the string 'colelcts' as a property name on our mysticalAnimal object, and returns the value that is stored at that property name, which is the string 'diamonds and gold and fire extinguishes' in this case. 
+  // Now, it looks up the string 'collects' as a property name on our mysticalAnimal object, and returns the value that is stored at that property name, which is the string 'diamonds and gold and fire extinguishes' in this case. 
 
-// 7. Create a variable called thisIsAVariable. Set it equal to the string 'superPower'.
+// Now you've gotten great practice setting properties of objects using both dot and bracket notation. Now let's get in some practice accessing those properties and when to use each form of access. 
+// HINT: When looking up a string, use dot notation. When looking up a variable, use bracket notation! This is all you need to know 98% of the time. 
+
+// 13. Create a variable called thisIsAVariable. Set it equal to the string 'superPower'.
 // Now let's use this to play with bracket vs. dot notation. 
-// 8. Try using dot notation to 
+// 14. What do you expect to happen when we try the following line? Talk this through with your partner for a minute. 
+  // console.log(mysticalAnimal.thisIsAVariable);
+  // The dot notation means that JS is going to try to look for a property name that is exactly the string after the dot- in this case, it's looking for a property called thisIsAVariable in our mysticalAnimal object. And clearly we don't have a property named that, so it will return undefined!
+// 15. Now try using thisIsAVariable using the proper form of access for variables. What do you get this time?
 
-// grandCouncil - a collection
+// Object Literals:
+// One last practice! So far we've been going through and creating different properties one by one. Let's use object literal notation to do a bunch at once!
+// We can create an object and give it properties all at the same time using object literal notation. An example: 
+/*  
+  var goalsForTheYear = {
+    cycling: '5000 miles',
+    climbing: '100 days',
+    giving: 'selflessly'
+  };
+*/
+// 16. Create a new variable called mysticalAnimal2, and set it equal to an object literal with the following properties: 
+  // type
+  // name
+  // likes
+  // bestFriend
+  // superPower
+  // food
+  // canFly
+  // collects
+
+// Awesome, by now you should have a pretty good familiarity with objects, bracket and dot notation, object literals, and accessing properties of objects. Feel free to keep exploring more on your own; objects are important things to understand!
