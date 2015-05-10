@@ -35,6 +35,14 @@
       // Now the computer knows that the expression inside the brackets evaluates to 1, so it is going to set the value at the 1 index equal to 'friends'. 
       // Obviously, while this works, it's a lot of characters to type out every time. Happily, there's a shorter way to do exactly this!
     // 3. push: arr.push(value); .push() is a method built into all arrays. It's a very simple and useful method. All it does is add a value to the end of an array. treasureChest.push('friends'); will add the string 'friends' to the end of our treasureChest array. 
+      // Let's talk through exactly what happens when we invoke treasureChest.push('peacock feathers'):
+      // First, the interpreter reads left to right, so it evaluates the variable on the left side. It looks this up and finds it's an array, so it 'replaces' the variable with the array that variable is equal to. Now instead of treasureChest, we have an actual array. 
+      // Next we invoke a method on that array. We're just using dot notation here like we learned yesterday! The only thing that's slightly different is that this property is a function. 
+      // As we'll get to later in the week, we need to invoke functions to make them run. So we invoke this function by putting the open and closed parentheses () next to it, and then we pass in an argument. 
+      // That argument is simply an item that we want to add to the end of our array. It could be anything (a string, a number, even an object, or another array that will be nested within our original array!).
+      // Push then adds the item to the next open position in our array, and the array properties that are built in for us by default will update the length for us. 
+      // Push is a method you will use all the time. In summary, you invoke it on an array, and pass in as an argument the item you want to add onto the end of the array. 
+
 // 6. Try using all three of these patterns to add values to the end of our treasureChest. Make up your own ideas of things that our dragon might keep in her treasureChest!
   // Be sure to console.log your treasureChest after each one to see what the results are.
   // What is our length going to be after each new item is added?
@@ -46,4 +54,6 @@
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push). 
 // 9. Use both .unshift and .shift on your treasureChest. As always, console.log your treasureChest afterwards to see the result. What happens? Can you explain it to your pair?
-// 10. 
+// 10. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
+
+
