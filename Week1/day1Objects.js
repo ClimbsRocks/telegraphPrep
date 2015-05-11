@@ -9,7 +9,7 @@
 // Recall that dot notation takes whatever is to the right of the dot, turns it into a string, and looks up that string as a property name in the object to the left of the dot. 
 // Let's use dot notation to add some properties to mysticalAnimal.
 // 2. Add a type property, and set it equal to 'dragon'.
-// 3. Add a name property, and set it equal to 'Larry'.
+// 3. Add a name property, and set it equal to 'Leslie'.
 // 4. Add a likes property, and set it equal to an empty array.
 // 5. Add a property called bestFriend, and set it equal to your name. 
 // 6. Add in a superPower property. Set it equal to 'gives amazing hugs'.
