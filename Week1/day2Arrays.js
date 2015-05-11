@@ -43,7 +43,7 @@
       // Push then adds the item to the next open position in our array, and the array properties that are built in for us by default will update the length for us. 
       // Push is a method you will use all the time. In summary, you invoke it on an array, and pass in as an argument the item you want to add onto the end of the array. 
 
-// 6. Try using all three of these patterns to add values to the end of our treasureChest. Make up your own ideas of things that our dragon might keep in her treasureChest!
+// 6. Try using all three of these patterns to add values to the end of our treasureChest. Make up your own ideas of things that our dragon might collect in her treasureChest!
   // Be sure to console.log your treasureChest after each one to see what the results are.
   // What is our length going to be after each new item is added?
 // We should now have at least 5 things in our treasureChest array. Mine looks like this: ['ethically sourced sandals', 'friends', 'rock climbing gear', 'JS knowledge', 'colored pants']. 
@@ -54,6 +54,26 @@
 // .unshift() works just like push, but for the start of our array (Hint: both unshift and push have the letter 'u' in their names).
 // .shift() works just like pop, but for the start of our array (Hint: shift is shorter than unshift, just like pop is shorter than push). 
 // 9. Use both .unshift and .shift on your treasureChest. As always, console.log your treasureChest afterwards to see the result. What happens? Can you explain it to your pair?
-// 10. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
+// 10. Now that we've populated treasureChest, let's add that to the mysticalAnimal object we created yesterday. We had a property on there called collects. Overwrite that property with the trasureChest array we've been playing with. console.log the mysticalAnimal object afterwards to make sure the collects property is now set equal to your array. 
+// 11. Create an empty array called grandCouncil. This is where we'll store all of the mysticalAnimal objects we'll create!
+// 11. Now create three new objects. Each object should have the following properties: 
+  // type- a string specifying what type of mysticalAnimal this is. Unicorns and dinosaurs and yeti and Loch Ness Monsters and polar bears and red pandas are all viable options!
+  // collects- an array with a few things this animal might collect
+  // canFly- a boolean (true or false- no strings around it, these are reserved keywords) representing whether this animal can fly or not. 
+// 13. Now add these onto the end of our grandCouncil array using the three methods outlined above (hard coding in an index position to add it to: arr[3]; utilizing the .length property: arr[arr.length]; push: arr.push(objName) ). 
+// 14. Whoops- looks like one of our mysticalAnimals melts too easily in the presence of Leslie the Dragon. Let's overwrite the value stored at the index 2 in our array with the string 'open position available!'. Check what grandCouncil looks like after overwriting this value. 
 
-
+// Congratulations! You've now gotten in a decent bit of practice using arrays and understanding the different ways to add and access values from them. 
+  // To recap: 
+  // Objects:
+    // A great place to store different pieces of data all tied to one thing. For example, storing name and address and phone number for a user. 
+    // The indices for an object are property names
+    // You can access the values in an object using dot notation (if the thing after the dot is exactly the name of the property you want to look up), or bracket notation (if you want to pass in either a variable or a string).
+  // Arrays:
+    // Great places to store lists of information (a list of all the stores a certain chain has open, a list of your friends, a list of numbers).
+    // Arrays are numerically indexed- each position in an array is represented by a number
+    // Arrays have a .push() method which adds a value onto the end of an array
+    // Arrays have a .length proeprty which automatically udpates with the length of the array
+    // Arrays are 0-indexed. That is, the first item you add into an array is stored at the 0th position, arr[0]. 
+    // Values in arrays must be accessed using bracket notation
+// We've gone over how to access individual values from arrays and objects, but you're probably curious if there's an easier way to access all the values in an array or object. We've mentioned the two different types of loops we have available for arrays and objects, and tomorrow we're going to practice them in more depth! Loops are great ways of accessing all the values in an array or object efficiently. 
