@@ -12,6 +12,8 @@ var obj = {
   // Inside the body of the for loop, console log the string 'hi, I'm inside the for loop for arrays!'
   // You should see this pop up 5 times in your console. 
   // This should tell you that the for loop is running 5 times. And all it's doing is running the body of the for loop once on each iteration. There's no magic there. 
+  // The body of the for loop is just a block of code the same number of times are there are items in the array.
+    // If we have 5 items in our array, we will run this block of code 5 times. 
 // 2. Cool, now let's console.log what i is in each iteration.
   // You should see 
   // 0
@@ -26,6 +28,8 @@ var obj = {
   // This is cool because it highlights how we access values from an array (just grab them by their numbered indices), 
     // and also highlights again that i is just a number in each iteration, there's nothing magical about it. 
     // It's just a number that starts at 0 (or whatever you choose to start it at), and counts up to the highest number you tell it to count to. 
+  // Remember that a for loop is just a block of code that we execute the same number of times as we have items in the array. 
+    // The only thing that changes each time is what i is. 
 
 // 3. Alright, now that we've figured out that i is just a number on each iteration, let's use i to access each item in our arr. 
   // Create a new for loop to iterate through arr, console logging each item to the console. We expect to see
@@ -114,6 +118,13 @@ var obj = {
   {}
   []
   */
+// 10. What's the difference between === and == and = ?
+  // Try using all three of them, and explaing the results of each one to your partner. Once you've done that, some explanations are below. Be sure that you can explain these to your partner, they're important!
+  // === will always return a boolean value (true, false). It checks whether two things are equal. 
+    // Put another way, threequals (===) asks the question 'Are these two things the same?', and then returns the results of that question (true or false).
+  // == YOU SHOULD NEVER USE THIS. Seriously, save yourself some serious heartache and just never use this. Also, other programmers will sometimes judge you for using ==. So really, just don't use it. 
+  // = This is for assignment. When you use the single equals, you are setting the thing on the left side of the operator equal to the thing on the right side of the operator. 
+    // x = 'I totally understand assignments!' means that we are overwriting any value that x had previously and setting x equal to the string 'I totally understand assignments!'. Play around with this a bit if you're curious! Curiosity is a wonderful trait in engineers :)
 
 // Arrays extra credit: 
 // Let's revisit this concept that i is just a number. What if we wanted to iterate through an array backwards? 
